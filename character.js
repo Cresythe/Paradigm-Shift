@@ -18,3 +18,15 @@ const { resources} = PIXI.Loader.Shared;
 const { Sprite } = PIXI
 const { Text } = PIXI 
 
+//start of PIXI application
+const app = new PIXI.Application({
+        width: 800, 
+        height: 800,
+        antialias: true, 
+        transparent: false, 
+        resoultion: 1, 
+    }
+);
+
+//Viewport for game
+document.body.appendChild(app.view); 
